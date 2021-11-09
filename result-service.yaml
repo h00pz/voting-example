@@ -9,7 +9,7 @@ spec:
   type: ClusterIP
   ports:
   - name: "result-service"
-    port: 5001
+    port: 8080
     targetPort: 8080
   selector:
     app: result
