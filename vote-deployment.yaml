@@ -18,6 +18,11 @@ spec:
       containers:
       - image: dockersamples/examplevotingapp_vote:before
         name: vote
+        env:
+        - name: BIND
+          value: '8081'
+        - name: PORT
+          value: '8081'
         ports:
-        - containerPort: 80
+        - containerPort: 8081
           name: vote
